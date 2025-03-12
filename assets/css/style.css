@@ -1088,3 +1088,9 @@ button {
     transform: scale(0) rotateZ(-90deg);
   }
 }
+
+.profile-img {
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
