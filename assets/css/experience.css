@@ -71,10 +71,12 @@ section > div {
 }
 @media only screen and (max-width: 400px) {
   section {
-    height: 85vh;
+    height: 110vh;
   }
 }
-
+.cont {
+  background-color: beige;
+}
 .main,
 .main1 {
   width: 100%;
