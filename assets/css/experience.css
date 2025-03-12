@@ -71,7 +71,7 @@ section > div {
 }
 @media only screen and (max-width: 400px) {
   section {
-    height: 110vh;
+    height: 160vh;
   }
 }
 .cont {
