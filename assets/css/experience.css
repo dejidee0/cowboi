@@ -32,6 +32,7 @@ html {
     padding-right: 3.5rem;
   }
   .godown {
+    position: relative;
     z-index: 1;
     padding-top: 8rem;
     padding-left: 3.3rem;
@@ -665,7 +666,7 @@ ul ol {
   text-align: center;
   letter-spacing: 1px;
 }
-.blog-slider__button:hover{
+.blog-slider__button:hover {
   color: white !important;
 }
 a:link {

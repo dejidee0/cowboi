@@ -1,9 +1,8 @@
-
 "use strict";
 // Sweet Alert CDN through JS
 let script = document.createElement("script");
-script.type = 'text/javascript';
-script.src="https://unpkg.com/sweetalert/dist/sweetalert.min.js";
+script.type = "text/javascript";
+script.src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js";
 document.body.appendChild(script);
 
 // Header
@@ -137,16 +136,15 @@ let footer = $(`
              <div class="form-header">
                 <h6 class="display">Get in Touch</h6>
               </div>
-                <form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8" >
-                  <input id="name" type="text" name="name" placeholder="Your Name" required/>
-                  <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
-                  <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
-              
-                  <div id="main">
-                    <button id="lnch" type="button" value="Send" >Send</button>
-                    <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
-                  </div>
-                </form>
+         <form name="form1"  action="https://formspree.io/f/mrbpgywe" method="POST" accept-charset="UTF-8">
+    <input id="name" type="text" name="name" placeholder="Your Name" required />
+    <input id="email" type="email" name="email" placeholder="Email Address" required />
+    <input type="hidden" name="recipient" value="aboderindaniel482@gmail.com" />
+    <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+
               </div>
             </div>
           </div>
@@ -437,32 +435,29 @@ $(window).on("load", function () {
 
 //send button animation
 
-
 $(function submitAnimation() {
-  const name = document.querySelector("#name")
-  const emailAdress = document.querySelector("#email")
-  const text = document.querySelector("#textArea")
-  const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+  const name = document.querySelector("#name");
+  const emailAdress = document.querySelector("#email");
+  const text = document.querySelector("#textArea");
+  const emailPattern =
+    /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
   $("#lnch").on("click", function () {
-
     // Check if the name field is empty or contains a number
-    if (name.value == "" || (/\d/.test(name.value))) {
-      swal("Error !","Please enter a valid name !","error");
+    if (name.value == "" || /\d/.test(name.value)) {
+      swal("Error !", "Please enter a valid name !", "error");
       return;
     }
     // Check if the email field is empty or email is not valid ex: test@@email.com
-    else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      swal("Error !","Please enter a valid email !","error");
+    else if (emailAdress.value == "" || !emailPattern.test(emailAdress.value)) {
+      swal("Error !", "Please enter a valid email !", "error");
       return;
     }
     // Check if the message field is empty
     else if (text.value == "") {
-      swal("Error !","Please enter a valid message !","error");
+      swal("Error !", "Please enter a valid message !", "error");
       return;
-    }
-    else {
-
+    } else {
       setTimeout(function () {
         $("#lnch").addClass("launching").text("Sending");
         $("#lnch_btn").addClass("launching");
@@ -473,7 +468,7 @@ $(function submitAnimation() {
       }, 1500);
       // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
       setTimeout(() => {
-        document.querySelector('form').submit();
+        document.querySelector("form").submit();
       }, 2200);
     }
   });
