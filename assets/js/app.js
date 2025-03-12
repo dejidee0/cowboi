@@ -155,7 +155,7 @@ let footer = $(`
     
 
     <div class="rounded-social-buttons tag">
-    <a class="social-button twitter" href="#" target="_blank">
+    <a class="social-button twitter" href="https://x.com/Krypto_cowboi" target="_blank">
     <!-- SVG code for twitter icon -->
     <svg class="twitter-icon-footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500"
@@ -213,7 +213,7 @@ let footer = $(`
     </svg>
     </a>
 
-    <a class="social-button linkedin" href="" target="_blank" >
+    <a class="social-button linkedin" href="https://www.linkedin.com/in/cowboigp" target="_blank" >
     <!-- svg code for linkedin icon -->
       <svg class="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8"
         stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
@@ -225,7 +225,7 @@ let footer = $(`
 
 
 
-    <a class="social-button instagram" href="" target="_blank" >
+    <a class="social-button instagram" href="https://www.instagram.com/cowboigp" target="_blank" >
     <!-- svg code for instagram icon -->
       <svg class="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5"
         style="enable-background:new 0 0 202.5 202.5;">
@@ -236,19 +236,14 @@ let footer = $(`
       </svg>
     </a>
 
-    <a class="social-button github" href="#" target="_blank">
-    <!-- SVG code for Github icon -->
-    <svg class="github-icon-footer" width="45px" height="45px" viewBox="0 0 300 300">
-        <!-- body -->
-        <path id="body" d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
-                                    c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
-                                    C90.6,53.3,78.9,56.8,78.9,56.8c-5,11.3-5.4,24.1-1.3,35.7c-8.5,11.1-12.7,24.8-11.9,38.7c0.2,33.8,26.4,61.8,60.2,64.1
-                                    c-5,4.7-8.1,11.1-8.6,18" />
-        <!-- arm                             -->
-        <path id="arm" d="M125.2,213.4c-13.9,7.8-31.5,2.8-39.3-11.2c-4.3-7.7-12-12.8-20.7-13.8c-11.2,0-4.6,6.4,0,9.4
-                                    c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8" />
+<a class="social-button telegram" href="https://t.me/cowboigp" target="_blank">
+    <!-- SVG code for Telegram icon -->
+    <svg class="telegram-icon-footer" width="45px" height="45px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <rect width="250" height="250" fill="none"/>
+        <path fill="#0088cc" d="M228.3,33.9a12.2,12.2,0,0,0-12.1-1.8L23.8,112.5a12.1,12.1,0,0,0,1.7,22.8L80.4,146l19.5,63.4a12,12,0,0,0,19.6,4.8l27.3-26.2,41.1,32.9a12,12,0,0,0,19.2-6.8l41.3-172A12,12,0,0,0,228.3,33.9ZM199.6,69.3,77.6,142.4l52.5,13.5,21.6,47.6,17.9-74.7ZM102,212.1l-15-48.9,24.3,14.5Z"/>
     </svg>
-    </a>
+</a>
+
 
 
     
